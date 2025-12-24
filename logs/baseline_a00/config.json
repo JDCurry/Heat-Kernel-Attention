@@ -1,0 +1,31 @@
+{
+  "model": {
+    "vocab_size": 50257,
+    "max_seq_len": 256,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 4,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "t": 0.28,
+    "alpha": 0.0,
+    "learnable_t": false,
+    "learnable_alpha": false
+  },
+  "train": {
+    "batch_size": 32,
+    "epochs": 1,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_steps": 1000,
+    "max_grad_norm": 1.0,
+    "eval_interval": 500,
+    "save_interval": 2000,
+    "max_tokens": 500000,
+    "seed": 42,
+    "device": "cuda",
+    "log_dir": "./logs",
+    "exp_name": "baseline_a00"
+  },
+  "effective_radius": Infinity
+}
