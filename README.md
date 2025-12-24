@@ -1,5 +1,8 @@
 # Heat Kernel Attention
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18041199.svg)](https://doi.org/10.5281/zenodo.18041199)
+
+
 **Provable Sparsity via Diffusion Dynamics**
 
 This repository contains the implementation and experimental code for the paper:
