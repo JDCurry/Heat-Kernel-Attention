@@ -1,0 +1,38 @@
+{
+  "run_name": "A2",
+  "run_config": {
+    "attention_mode": "diffusion_fixed",
+    "training_mode": "standard",
+    "fixed_t": 0.16165807537309523,
+    "alpha": 0.0,
+    "description": "Diffusion (fixed t=0.1617) + CE"
+  },
+  "model_config": {
+    "vocab_size": 50257,
+    "max_seq_len": 256,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 12,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "attention_mode": "diffusion_fixed",
+    "fixed_t": 0.16165807537309523,
+    "alpha": 0.0,
+    "t_min": 0.05,
+    "t_max": 2.0,
+    "t_base": 0.28,
+    "L_base": 4,
+    "training_mode": "standard"
+  },
+  "dataset": "wikitext-103",
+  "batch_size": 32,
+  "epochs": 3,
+  "lr": 0.0003,
+  "max_tokens": null,
+  "max_steps": 50000,
+  "seq_len": 256,
+  "seed": 42,
+  "amp": true,
+  "grad_accum": 1,
+  "effective_batch": 32
+}

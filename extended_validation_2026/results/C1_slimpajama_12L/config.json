@@ -1,0 +1,43 @@
+{
+  "run_name": "C1",
+  "run_config": {
+    "attention_mode": "diffusion_learned",
+    "training_mode": "diffusion_native",
+    "fixed_t": 0.16165807537309523,
+    "t_min": 0.08082903768654762,
+    "t_max": 0.24248711305964285,
+    "alpha": 0.0,
+    "loss_mode": "auxiliary",
+    "aux_rec": 0.05,
+    "aux_spec": 0.01,
+    "description": "CE + aux(rec=0.05, spec=0.01), constrained t"
+  },
+  "model_config": {
+    "vocab_size": 50257,
+    "max_seq_len": 256,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 12,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "attention_mode": "diffusion_learned",
+    "fixed_t": 0.16165807537309523,
+    "alpha": 0.0,
+    "t_min": 0.08082903768654762,
+    "t_max": 0.24248711305964285,
+    "t_base": 0.28,
+    "L_base": 4,
+    "training_mode": "diffusion_native"
+  },
+  "dataset": "slimpajama",
+  "batch_size": 32,
+  "epochs": 3,
+  "lr": 0.0003,
+  "max_tokens": 100000000,
+  "max_steps": 50000,
+  "seq_len": 256,
+  "seed": 42,
+  "amp": true,
+  "grad_accum": 1,
+  "effective_batch": 32
+}
