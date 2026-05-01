@@ -1,0 +1,34 @@
+{
+  "run_label": "S3_seq2048_softmax",
+  "run_config": {
+    "attention_mode": "softmax",
+    "training_mode": "standard",
+    "alpha": 0.0,
+    "description": "Softmax baseline"
+  },
+  "model_config": {
+    "vocab_size": 50257,
+    "max_seq_len": 2048,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 12,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "attention_mode": "softmax",
+    "fixed_t": 0.16,
+    "alpha": 0.0,
+    "t_min": 0.05,
+    "t_max": 2.0,
+    "t_base": 0.28,
+    "L_base": 4,
+    "training_mode": "standard"
+  },
+  "dataset": "wikitext-103",
+  "seq_len": 2048,
+  "batch_size": 8,
+  "grad_accum": 4,
+  "effective_batch": 32,
+  "max_steps": 15000,
+  "lr": 0.0003,
+  "seed": 42
+}

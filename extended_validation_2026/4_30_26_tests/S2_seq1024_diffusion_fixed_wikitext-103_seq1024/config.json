@@ -1,0 +1,35 @@
+{
+  "run_label": "S2_seq1024_diffusion_fixed",
+  "run_config": {
+    "attention_mode": "diffusion_fixed",
+    "training_mode": "standard",
+    "fixed_t": 0.16165807537309523,
+    "alpha": 0.0,
+    "description": "Diffusion (fixed t=0.1617)"
+  },
+  "model_config": {
+    "vocab_size": 50257,
+    "max_seq_len": 1024,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 12,
+    "d_ff": 1024,
+    "dropout": 0.1,
+    "attention_mode": "diffusion_fixed",
+    "fixed_t": 0.16165807537309523,
+    "alpha": 0.0,
+    "t_min": 0.05,
+    "t_max": 2.0,
+    "t_base": 0.28,
+    "L_base": 4,
+    "training_mode": "standard"
+  },
+  "dataset": "wikitext-103",
+  "seq_len": 1024,
+  "batch_size": 8,
+  "grad_accum": 4,
+  "effective_batch": 32,
+  "max_steps": 25000,
+  "lr": 0.0003,
+  "seed": 42
+}
